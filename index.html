@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CALCULADORA DE PROPINAS</title>
+</head>
+<body>
+    <main>
+        <section>
+            <article class="art0">
+                <H1>Calculadora de Propinas</H1> 
+            </article>
+
+        <article class="art1">
+        
+        <div class="art1div">
+            <span class="text1">Total de la cuenta</span>
+        </div>
+        <div class="art1div">
+            <input placeholder="Ingrese total Cuenta" name="totalCuenta" id="inp1" class="inputs"/>
+        </div>    
+        <div class="art1div">
+            <span class="text1">Porcentaje de la Propina</span>
+        </div>
+        <div class="art1div">
+            <input placeholder="Ingrese % de la propina" name="porcentPropina" id="inp2" class="inputs"/>
+        </div>
+        <div>
+            <button onclick="capturaCalcular()" class="btn">Calcular</button>
+        </div>
+    </article>
+    <article class="art2">
+        <div class="contenedor">
+            <div class="conteInter" name="1">Resumen</div>
+            <div class="conteInter" name="2" id="conteInter2">
+                <div class="subInter">
+                    <label for="tCta">Total de la Cuenta</label>
+                </div>
+                <div class="subInter">
+                    <label for="prop">Propina</label>
+                </div>
+                <div class="subInter">
+                    <label for="result">Total a Pagar</label>
+                </div>
+            </div>
+            <div class="conteInter" name="3" id="conteInter3">
+                <div class="subInter">
+                    <input type="text" name="total Cuenta" id="tCta" class="resultados" readonly>
+                    <input type="text" name="% Propina" id="prop" class="resultados" readonly>    
+                    <input type="text" name="tPagar" id="result"  class="resultados" readonly>
+                </div>
+            </div>
+    </article>
+</section>
+</main>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
